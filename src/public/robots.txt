@@ -1,0 +1,15 @@
+# *
+User-agent: *
+Allow: /
+
+
+# *
+User-agent: *
+Disallow: /virtual-card*
+
+
+# Host
+# Host: https://example.com
+
+# Sitemaps
+Sitemap: /sitemap.xml

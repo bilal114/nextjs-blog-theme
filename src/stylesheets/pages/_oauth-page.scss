@@ -1,0 +1,71 @@
+.oauth {
+  /**
+ * Not found  Section
+ */
+  display: flex;
+  flex-direction: column;
+
+  .oauth-section {
+    --whoops-bg: var(--navy-blue);
+    --whoops-section-vert-pad: calc(var(--section-vert-pad));
+  }
+
+  .oauth-section {
+    padding: 227.5px 32px;
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 1;
+  }
+
+  .whoops__child {
+    max-width: var(--max-width);
+    margin: 0 auto;
+  }
+
+  .section__description {
+    text-align: center;
+    font-weight: 400;
+    margin-top: 30px;
+  }
+
+  .whoops__child .section__title {
+    color: var(text--dark);
+    font-weight: 100;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 201px;
+
+    font-family: var(--font);
+  }
+
+  .whoops__child .section__description {
+    font-size: 1.5rem;
+    line-height: 43px;
+    font-weight: 400;
+  }
+
+  .whoops__child .button__primary {
+    font-size: 1.2rem;
+    max-width: 175px;
+    padding: 15px 30px;
+    margin: 2rem auto 0;
+    background-color: var(--primary-blue);
+    border-color: var(--primary-blue);
+    margin-top: 30px;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .whoops {
+      padding: 417.5px 0;
+    }
+
+    .whoops__child .section__title {
+      font-size: 100px;
+    }
+  }
+  @media only screen and (max-width: 620px) {
+    .whoops__child .section__title {
+      font-size: 50px;
+    }
+  }
+}

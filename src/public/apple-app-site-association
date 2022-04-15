@@ -1,0 +1,19 @@
+{
+  "applinks":{
+      "appIDs":["1569801600.org.GeraldWallet"],
+      "details":[
+        {
+            "appID":"1569801600.org.GeraldWallet",
+            "paths":[
+              "*"
+            ]
+        }
+      ]
+  },
+  "webcredentials": {
+    "apps": [ "1569801600.org.GeraldWallet" ]
+  },
+  "appclips": {
+    "apps": ["1569801600.org.GeraldWallet"]
+  }
+}

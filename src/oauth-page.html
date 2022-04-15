@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>OAuth- %SITE_TITLE% | %SITE_NAME%</title>
+    <meta name="description" content="%SITE_DESCRIPTION%" />
+  </head>
+  <body class="oauth">
+    %HEADER%
+
+    <section class="oauth-section">
+      <div class="oauth__child">
+        <h2 class="section__title">redirecting</h2>
+      </div>
+    </section>
+    %FOOTER%
+
+    <script type="text/javascript">
+      window.onload = function () {
+        // Deep link to your app goes here
+
+        setTimeout(function () {
+          // Link to the App Store should go here -- only fires if deep link fails
+          window.location = 'geraldwallet://oauth-page';
+        }, 500);
+      };
+    </script>
+  </body>
+</html>

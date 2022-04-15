@@ -1,0 +1,187 @@
+.terms {
+  /**
+ * HERO
+ */
+
+  .hero {
+    --hero-bg: var(--navy-blue);
+    --hero-section-top-pad: var(--section-vert-pad);
+    --hero-section-bottom-pad: calc(var(--section-vert-pad) + 4rem);
+    --hero-section-name: var(--red);
+    --hero-section-title: #fff;
+    --hero-section-subtitle: var(--red);
+  }
+
+  .hero {
+    padding: 10rem 0 2rem 0;
+    background-color: var(--hero-bg);
+  }
+
+  .hero__child {
+    max-width: var(--max-width);
+    margin: 0 auto;
+  }
+
+  .hero__left {
+    max-width: 50%;
+
+    &__button {
+      max-width: 200px;
+      margin-top: 2rem;
+    }
+  }
+
+  .hero__child .section__name {
+    font-size: 1.563rem;
+    text-align: center;
+    color: var(--hero-section-name);
+  }
+
+  .hero__child .section__title {
+    font-size: 4rem;
+    color: var(--hero-section-title);
+    line-height: 1.2;
+    font-weight: 300;
+  }
+
+  .hero__child .section__subtitle {
+    font-size: 1.2rem;
+    font-weight: 400;
+    max-width: var(--subtitle-max-width);
+    color: var(--hero-section-title);
+    line-height: var(--text-line-height);
+  }
+
+  .hero__child .section__name + .section__title {
+    margin-top: var(--name-title-gap);
+  }
+
+  .hero__child .section__title + .section__subtitle {
+    margin-top: var(--title-subtitle-gap);
+  }
+
+  .underline {
+    text-decoration: underline;
+  }
+
+  .center {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 3rem;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .hero {
+      padding: 10rem 0 0 0;
+    }
+
+    .hero__child .section__title {
+      font-size: 2.5rem;
+      line-height: 1.15;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .hero__child {
+      max-width: 100%;
+      padding-bottom: 3rem;
+    }
+
+    .button__primary {
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  /**
+ * How To Earn
+ */
+
+  .termsOfUse {
+    --termsOfUse-bg: #fff;
+    --termsOfUse-section-top-pad: var(--section-vert-pad);
+    --termsOfUse-section-name: var(--red);
+    --termsOfUse-section-title: var(--navy-blue);
+  }
+
+  .termsOfUse {
+    background-color: var(--termsOfUse-bg);
+    padding: var(--termsOfUse-section-top-pad) 0;
+  }
+
+  .termsOfUse__child {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+
+  .termsOfUse__child a {
+    text-decoration: underline;
+  }
+
+  .termsOfUse__child .section__name {
+    color: var(--termsOfUse-section-name);
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+
+  .termsOfUse__child .section__title {
+    color: var(--termsOfUse-section-title);
+    font-size: 1.5rem;
+  }
+
+  .termsOfUse__child .section__subtitle {
+    color: var(--termsOfUse-section-title);
+    font-size: 2rem;
+    padding-top: 2rem;
+  }
+
+  .termsOfUse__child .section__name + .section__title {
+    margin-top: var(--name-title-gap);
+  }
+
+  .termsOfUse__child .section__title {
+    padding: 2em 0 1.2em 0;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .termsOfUse {
+      padding-top: var(--termsOfUse-section-top-pad);
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .termsOfUse {
+      padding: var(--termsOfUse-section-top-pad) 0;
+    }
+
+    .termsOfUse__child {
+      font-size: 1.2rem;
+    }
+
+    .termsOfUse__child .section__subtitle {
+      font-size: 1.2rem;
+    }
+  }
+
+  .terms__list,
+  ol {
+    list-style-type: lower-alpha;
+    list-style-position: inside;
+    margin-top: 20px;
+
+    &__element {
+      margin-top: inherit;
+    }
+  }
+
+  .deposit__list {
+    list-style-type: disc;
+    list-style-position: inside;
+    margin-top: 20px;
+  }
+}
